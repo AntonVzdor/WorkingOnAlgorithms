@@ -11,7 +11,11 @@ fun main() {
     println("")
     numberFive()
     println("")
-    umberPi()
+    numberPi()
+    println("")
+    numberE()
+    println("")
+    inputNumber()
 }
 
 fun numberOne(){ val numbers = arrayOf(31, 18, 79); for (i in numbers) print("$i ")}
@@ -24,4 +28,8 @@ fun numberFour(){ val number = arrayOf(5, 10, 21); for (i in number) println("$i
 
 fun numberFive(){ val number = arrayOf(1, 2); for (i in number) println("$i")}
 
-fun umberPi(){ val pi = 3.1415926; println("%.3f".format(pi))}
+fun numberPi(){ val pi = 3.1415926; println("%.3f".format(pi))}
+
+fun numberE(){ val e = 2.71828; println("%.1f".format(e))}
+
+fun inputNumber(){ val inputUser: Int = readln().toInt(); println("Вы ввели чило: $inputUser")}
