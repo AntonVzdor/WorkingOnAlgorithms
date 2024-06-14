@@ -1,21 +1,7 @@
 package org.example
 
 fun main() {
-    numberOne()
-    println("")
-    numberTwo()
-    println("")
-    numberThree()
-    println("")
-    numberFour()
-    println("")
-    numberFive()
-    println("")
-    numberPi()
-    println("")
-    numberE()
-    println("")
-    inputNumber()
+    inputUserName()
 }
 
 fun numberOne(){ val numbers = arrayOf(31, 18, 79); for (i in numbers) print("$i ")}
@@ -33,3 +19,11 @@ fun numberPi(){ val pi = 3.1415926; println("%.3f".format(pi))}
 fun numberE(){ val e = 2.71828; println("%.1f".format(e))}
 
 fun inputNumber(){ val inputUser: Int = readln().toInt(); println("Вы ввели чило: $inputUser")}
+
+fun inputNumberUser(){ val inputUser: Int = readln().toInt(); println("$inputUser - вот какое число вы ввели") }
+
+fun inputName(){ println("Введите имя"); val inputUser = readln(); println(inputUser) }
+
+fun footballTeam(){ println("Введите название команды"); val footballTeamUser = readln(); println("$footballTeamUser - это чемпионы!") }
+
+fun inputUserName(){ println("Введите имя"); val inputUser = readln(); println("Привет, $inputUser!") }
