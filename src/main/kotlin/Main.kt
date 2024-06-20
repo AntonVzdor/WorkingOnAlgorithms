@@ -27,3 +27,16 @@ fun inputName(){ println("Введите имя"); val inputUser = readln(); pri
 fun footballTeam(){ println("Введите название команды"); val footballTeamUser = readln(); println("$footballTeamUser - это чемпионы!") }
 
 fun inputUserName(){ println("Введите имя"); val inputUser = readln(); println("Привет, $inputUser!") }
+
+fun newUserInput(){
+    println("Введите целое число")
+    val numberInput = readln()
+
+    if ((numberInput.toFloat() % 1) == 0.toFloat()){
+        val numNext = numberInput.toInt() + 1
+        val numPast = numberInput.toInt() - 1
+        println("Следующее за число $numberInput число - $numNext")
+        println("Для числа $numberInput предыдущее чилос - $numPast")
+    } else{
+        println("Вы ввели не целое чило")
+    }}
