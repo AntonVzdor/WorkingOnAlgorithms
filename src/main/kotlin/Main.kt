@@ -40,3 +40,44 @@ fun newUserInput(){
     } else{
         println("Вы ввели не целое чило")
     }}
+
+fun treeNumber(){
+    println("Введите первое число") ; val oneNumber = readln().toInt()
+    println("Введите второе число") ; val twoNumber = readln().toInt()
+    println("Введите третье чило") ; val treeNumber = readln().toInt()
+    println("$oneNumber  $twoNumber  $treeNumber")
+}
+
+fun fourNumber(){
+    println("Введите первое число") ; val oneNumber = readln().toInt()
+    println("Введите второе число") ; val twoNumber = readln().toInt()
+    println("Введите третье чило") ; val treeNumber = readln().toInt()
+    println("Введите четвертое чило") ; val fourNumber = readln().toInt()
+    println("Ваши числа: $oneNumber $twoNumber $treeNumber $fourNumber")
+}
+
+fun newFun(){
+    var inputNumber = 0
+    for (i in 1..5){
+        println("Введите число") ; inputNumber = readln().toInt()
+    }
+        println("")
+    println("a) 5 10\n7 см")
+        println("")
+    println("100 $inputNumber\n1949 $inputNumber")
+        println("")
+    println("$inputNumber 25\n$inputNumber $inputNumber")
+}
+
+fun newFunTwo(){
+    var inputNumber = 0
+    for (i in 1..5){
+        println("Введите число") ; inputNumber = readln().toInt()
+    }
+    println("")
+    println("a) 5 10\n   7 см")
+    println("")
+    println("b) 100 $inputNumber\n   1949 $inputNumber")
+    println("")
+    println("c) $inputNumber 25\n   $inputNumber $inputNumber")
+}
