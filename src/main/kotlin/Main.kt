@@ -1,7 +1,7 @@
 package org.example
 
 fun main() {
-    daysAndWeeks()
+    appleAndHuman(6, 2)
 }
 
 fun centimeInMet(){
@@ -26,5 +26,8 @@ fun daysAndWeeks(){
 }
 
 fun appleAndHuman(apple: Int, human: Int){
-
+    val distributed = apple - human
+    val stayed = apple - distributed
+    println("Роздано: $stayed")
+    println("Осталось: $distributed")
 }
