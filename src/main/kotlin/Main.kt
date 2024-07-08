@@ -1,7 +1,7 @@
 package org.example
 
 fun main() {
-    appleAndHuman(6, 2)
+    rectangle()
 }
 
 fun centimeInMet(){
@@ -30,4 +30,19 @@ fun appleAndHuman(apple: Int, human: Int){
     val stayed = apple - distributed
     println("Роздано: $stayed")
     println("Осталось: $distributed")
+}
+
+//3,5
+fun rectangle(){
+    println("Данные вашего прямоугольника")
+    println("Введите длина:")
+    val width = readln().toInt()
+    println("Введите высота:")
+    val height = readln().toInt()
+    square(width, height)
+}
+
+fun square(width: Int, height: Int){
+    val result = width / height
+    println("В вашем прямоугольнике поместиться $result квадратов.")
 }
