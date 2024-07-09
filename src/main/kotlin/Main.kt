@@ -1,7 +1,7 @@
 package org.example
 
 fun main() {
-    rectangle()
+
 }
 
 fun centimeInMet(){
@@ -25,11 +25,29 @@ fun daysAndWeeks(){
     println("Это $week недель.")
 }
 
+//3,4
+fun humanAndApple(){
+    println("Сколько яблок?")
+    val apple = readln().toInt()
+    println("Сколько людей?")
+    val human = readln().toInt()
+    appleAndHuman(apple, human)
+}
+
 fun appleAndHuman(apple: Int, human: Int){
-    val distributed = apple - human
-    val stayed = apple - distributed
-    println("Роздано: $stayed")
-    println("Осталось: $distributed")
+    if (apple > human){
+        val distributed = apple - human
+        val stayed = apple - distributed
+        println("Роздано: $stayed.")
+        println("Осталось: $distributed.")
+    } else if (apple == human){
+        println("Все ялоки розданы.")
+    }
+    else{
+        val answer = human - apple
+        println("Людей больше чем яблок.")
+        println("Не хватает $answer яблок.")
+    }
 }
 
 //3,5
@@ -43,6 +61,11 @@ fun rectangle(){
 }
 
 fun square(width: Int, height: Int){
-    val result = width / height
-    println("В вашем прямоугольнике поместиться $result квадратов.")
+    if (width > height){
+        val result = width / height
+        println("В вашем прямоугольнике поместиться $result квадратов.")
+    } else {
+        println("Не верно!")
+        println("Длина должна быть больше высоты.")
+    }
 }
