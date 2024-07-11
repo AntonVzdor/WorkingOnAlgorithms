@@ -1,7 +1,7 @@
 package org.example
 
 fun main() {
-
+    asd ()
 }
 
 fun centimeInMet(){
@@ -68,4 +68,29 @@ fun square(width: Int, height: Int){
         println("Не верно!")
         println("Длина должна быть больше высоты.")
     }
+}
+
+
+fun asd () {
+    val mesto = readln().toString()
+    compartment(mesto)
+}
+
+fun compartment(mesto : String){
+    val vanOne = listOf("1","2","3","4")
+    val vanTwo = listOf("5","6","7","8")
+    val vanTree = listOf("9","10","11","12")
+    val vanFour = listOf("13","14","15","16")
+
+    val result = if(mesto.equals(vanOne)) { println("у вас первое купе")
+    } else if (mesto.equals(vanTwo)){
+        println("у вас первое купе")
+    } else if (mesto.equals(vanTree)){
+        println("у вас первое купе")
+    } else if (mesto.equals(vanFour)) {
+        println("у вас первое купе")
+    } else {
+        println("Хуй")
+    }
+    return result
 }
