@@ -1,7 +1,7 @@
 package org.example
 
 fun main() {
-    asd ()
+    asd()
 }
 
 fun centimeInMet(){
@@ -71,26 +71,23 @@ fun square(width: Int, height: Int){
 }
 
 
-fun asd () {
-    val mesto = readln().toString()
-    compartment(mesto)
+fun asd() {
+    println("Какое у вас место?")
+    val place = readln().toInt()
+    compartment(place)
 }
 
-fun compartment(mesto : String){
-    val vanOne = listOf("1","2","3","4")
-    val vanTwo = listOf("5","6","7","8")
-    val vanTree = listOf("9","10","11","12")
-    val vanFour = listOf("13","14","15","16")
-
-    val result = if(mesto.equals(vanOne)) { println("у вас первое купе")
-    } else if (mesto.equals(vanTwo)){
-        println("у вас первое купе")
-    } else if (mesto.equals(vanTree)){
-        println("у вас первое купе")
-    } else if (mesto.equals(vanFour)) {
-        println("у вас первое купе")
-    } else {
-        println("Хуй")
+fun compartment(place: Int){
+    when(place) {
+        in 1..4 -> println("У вас первое купе")
+        in 5..8 -> println("У вас второе купе")
+        in 9..13 -> println("У вас третье купе")
+        in 14..17 -> println("У вас четвертое купе")
+        in 18..21 -> println("У вас пятое купе")
+        in 22..25 -> println("У вас шестое купе")
+        in 26..29 -> println("У вас седьмое купе")
+        in 30..34 -> println("У вас восьмое купе")
+        in 38..48 -> println("У вас девятое купе")
+        else -> println("Вы не в том вагоне")
     }
-    return result
-}
+    }
