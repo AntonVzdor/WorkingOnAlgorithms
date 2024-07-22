@@ -1,7 +1,7 @@
 package org.example
 
 fun main() {
-    decision()
+    seatCompartment()
 }
 
 fun centimeInMet(){
@@ -71,12 +71,24 @@ fun square(width: Int, height: Int){
 }
 
 //3,6
-fun asd() {
+fun seatCompartment() {
     println("Какое у вас место?")
-    val place = readln().toInt()
-    compartment(place)
+    val seat = readln().toInt()
+    println("Сколько купе в вагоне?")
+    val compartment = readln().toInt()
+    println("Сколько в купе мест?")
+    val numberSeats = readln().toInt()
+    compartment(seat, compartment, numberSeats)
 }
 
+fun compartment(seat: Int, compartment: Int, numberSeats: Int){
+    if (seat < 1 || seat > compartment * numberSeats){
+println("Hull")
+    } else {
+val floor = (seat - 1) / numberSeats + 1
+println("Ваше место $seat в купе $floor")
+    }
+}
 fun compartment(place: Int){
     when(place) {
         in 1..4 -> println("У вас первое купе")
@@ -91,6 +103,7 @@ fun compartment(place: Int){
         else -> println("Вы не в том вагоне")
     }
 }
+
 //3,7
 fun decision(){
     println("Какой номер квартиры")
