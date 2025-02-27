@@ -1,8 +1,6 @@
 package org.example
 
-fun main() {
-
-}
+fun main() {}
 
 fun numberOne(){ val numbers = arrayOf(31, 18, 79); for (i in numbers) print("$i ")}
 
